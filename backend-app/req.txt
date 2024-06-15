@@ -1,6 +1,11 @@
 asgiref==3.8.1
+diff-match-patch==20230430
 Django==5.0.6
+django-import-export==4.0.8
 django-phonenumber-field==7.3.0
+gunicorn==22.0.0
+packaging==24.1
 phonenumbers==8.13.38
 sqlparse==0.5.0
+tablib==3.5.0
 tzdata==2024.1

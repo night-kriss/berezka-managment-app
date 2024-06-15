@@ -4,6 +4,43 @@
 {% block extrastyle %}{{ block.super }}
 <link rel="stylesheet" href="{% static "admin/css/dashboard.css" %}">
 <style>
+#content{
+    margin: auto;
+}
+
+#content-related{
+    margin: 0;
+    margin-right: 0;
+    width: 100%;
+    position: relative;
+}
+
+@media (max-width: 1024px)
+{
+    #content-related {
+        margin-right: 0 !important;
+    }
+}
+
+#sub_actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5em;
+
+    margin-bottom: 0.5em;
+}
+
+a.sub-action-button{
+    color: var(--accent);
+    background-color: var(--header-bg);
+    padding: 0.5em;
+    text-align: center;
+}
+
+.fa-file-excel {
+    font-size: 42pt;
+    margin: .25em;
+}
 
 </style>
 {% endblock %}
@@ -17,6 +54,27 @@
 {% block nav-sidebar %}{% endblock %}
 
 {% block content %}
+<div id="sub_actions">
+    <a href="/generate/child/" class="sub-action-button">
+        <p><i class="fa-sharp fa-solid fa-file-excel"></i><br>
+            
+        
+            Генерация списка воспитаников для текущей смены
+        </p>
+    </a>
+    <a href="/generate/soc/" class="sub-action-button">
+        <p><i class="fa-solid fa-file-excel"></i><br>
+        
+            Генерация социальной характеристики для текущей смены
+        </p>
+    </a>
+    <a href="/generate/ticket/" class="sub-action-button">
+        <p><i class="fa-solid fa-file-excel"></i><br>
+        
+            Генерация списка учета путевок для текущей смены
+        </p>
+    </a>
+</div>
 <div id="content-main">
     {% include "admin/app_list.html" with app_list=app_list show_changelinks=True %}
 </div>

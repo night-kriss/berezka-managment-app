@@ -21,7 +21,8 @@ SECRET_KEY = get_random_secret_key()
 DEBUG = os.environ.get("DEBUG", 'True') == 'True' #FIX поправить потом
 
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://z0bte1-178-124-208-147.ru.tuna.am', 'http://localhost']
 
 INSTALLED_APPS = [
 
