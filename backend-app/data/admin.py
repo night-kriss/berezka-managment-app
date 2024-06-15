@@ -1,7 +1,9 @@
 from django.contrib import admin
 from .models import *
 
-admin.site.site_header = "Справка и Учёт"
+from import_export.admin import ImportExportActionModelAdmin
+
+admin.site.site_header = ' "Берёзка" Справка и Учёт'
 
 @admin.register(Smena)
 class SmenaModelAdmin(admin.ModelAdmin):
@@ -20,7 +22,7 @@ class StudyPlaceOptionModelAdmin(admin.ModelAdmin):
     pass
 
 @admin.register(Child)
-class ChildModelAdmin(admin.ModelAdmin):
+class ChildModelAdmin(ImportExportActionModelAdmin):
     search_fields = ["second_name","first_name","third_name"]
     list_filter = ["party__smena__is_curent",  "sex", "region", "from_city", "social_type", "study_place_type", "party"]
 

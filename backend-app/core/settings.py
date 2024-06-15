@@ -24,8 +24,11 @@ DEBUG = os.environ.get("DEBUG", 'True') == 'True' #FIX поправить пот
 ALLOWED_HOSTS = ["*"]
 
 INSTALLED_APPS = [
+
     'core',
     'data',
+    
+    'import_export',
     
     'django.contrib.admin',
     'django.contrib.auth',
