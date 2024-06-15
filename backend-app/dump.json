@@ -1,0 +1,132 @@
+[
+    {
+        "model": "data.smena",
+        "pk": 1,
+        "fields": {
+            "title": "Зеленые сады 2024",
+            "start_at": "2024-06-14",
+            "end_at": "2024-06-30",
+            "is_curent": true
+        }
+    },
+    {
+        "model": "data.party",
+        "pk": 1,
+        "fields": {
+            "title": "Отряд 1",
+            "smena": 1
+        }
+    },
+    {
+        "model": "data.socialoption",
+        "pk": 1,
+        "fields": {
+            "title": "Дети из полной семьи"
+        }
+    },
+    {
+        "model": "data.socialoption",
+        "pk": 2,
+        "fields": {
+            "title": "Дети из неполной семьи"
+        }
+    },
+    {
+        "model": "data.socialoption",
+        "pk": 3,
+        "fields": {
+            "title": "Дети из многодетных семьи"
+        }
+    },
+    {
+        "model": "data.socialoption",
+        "pk": 4,
+        "fields": {
+            "title": "Дети из семейных детских домов"
+        }
+    },
+    {
+        "model": "data.socialoption",
+        "pk": 5,
+        "fields": {
+            "title": "Дети из школ интернатов"
+        }
+    },
+    {
+        "model": "data.socialoption",
+        "pk": 6,
+        "fields": {
+            "title": "Дети инвалиды"
+        }
+    },
+    {
+        "model": "data.socialoption",
+        "pk": 7,
+        "fields": {
+            "title": "Дети из районов загрязненых"
+        }
+    },
+    {
+        "model": "data.socialoption",
+        "pk": 8,
+        "fields": {
+            "title": "Дети находящиеся на опеке"
+        }
+    },
+    {
+        "model": "data.studyplaceoption",
+        "pk": 1,
+        "fields": {
+            "title": "Гимназия"
+        }
+    },
+    {
+        "model": "data.studyplaceoption",
+        "pk": 2,
+        "fields": {
+            "title": "Лицей"
+        }
+    },
+    {
+        "model": "data.studyplaceoption",
+        "pk": 3,
+        "fields": {
+            "title": "Средняя школа"
+        }
+    },
+    {
+        "model": "data.studyplaceoption",
+        "pk": 4,
+        "fields": {
+            "title": "Базовая школа"
+        }
+    },
+    {
+        "model": "data.studyplaceoption",
+        "pk": 5,
+        "fields": {
+            "title": "Базовая школа-сад"
+        }
+    },
+    {
+        "model": "data.studyplaceoption",
+        "pk": 6,
+        "fields": {
+            "title": "Средняя школа-сад"
+        }
+    },
+    {
+        "model": "data.studyplaceoption",
+        "pk": 7,
+        "fields": {
+            "title": "Спортивная школа"
+        }
+    },
+    {
+        "model": "data.studyplaceoption",
+        "pk": 8,
+        "fields": {
+            "title": "Колледж"
+        }
+    }
+]

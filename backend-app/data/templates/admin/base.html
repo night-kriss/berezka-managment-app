@@ -1,0 +1,37 @@
+{% extends 'admin/base.html' %}
+
+{% block extrastyle %}{{ block.super }}
+<style>
+    html[data-theme="light"],
+    html[data-theme="dark"],
+    :root {
+        --link-fg: #93960f;
+        --secondary: rgb(147, 158, 48);
+
+        --accent: #fdff82;
+        --header-bg: #6d9729;
+        --header-color: #ffffff;
+
+        --header-link-color: #eeff00;
+
+        --selected-row: #2e3b1e;
+        --link-selected-fg: #57c43c;
+        --link-hover-color: #4e5017;
+
+        --breadcrumbs-bg: #395a12;
+        --breadcrumbs-fg: #64e045;
+
+        --button-fg: #eeff00;
+        --default-button-bg: #6d9729;
+        --default-button-hover-bg: #8abb3a;
+        --button-bg: #8ba03e;
+        --button-hover-bg: #a8c445;
+        --delete-button-bg: #e74242;
+        --delete-button-hover-bg: #ce6464;
+
+        --object-tools-bg: #619b52;
+        --object-tools-hover-bg: #4ec530;
+
+    }
+</style>
+{% endblock %}
